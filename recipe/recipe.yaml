@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: vizro-dash-components
-  version: "0.1.1"
+  version: "0.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/vizro_dash_components-${{ version }}.tar.gz
-  sha256: 1825ea1dc28d41424f5f4eae8558f9534a4434cca5681df68065be05923bbab2
+  sha256: 6d424813c97b0253dc38c29c67b99ce70467acd66ab4deb2c3bee3815e1771e6
 
 build:
   number: 0
@@ -35,8 +35,8 @@ tests:
         - vizro_dash_components
       pip_check: true
       python_version:
-      - ${{ python_min }}.*
-      - "*"
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Vizro Dash Components are used by the Vizro framework but can be used in a pure Dash app

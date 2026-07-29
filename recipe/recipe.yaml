@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: vizro-dash-components
-  version: "0.2.0"
+  version: "0.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/vizro_dash_components-${{ version }}.tar.gz
-  sha256: 6d424813c97b0253dc38c29c67b99ce70467acd66ab4deb2c3bee3815e1771e6
+  sha256: ba80928236590ac77ba3aeb01f52cbc39d3cf3a5398527aef82a14e33471b72c
 
 build:
   number: 0
